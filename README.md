@@ -37,4 +37,4 @@ The test script checks the functionality of the `TjStableCoin` contract for:
    - Tests the scenario where a sender doesn't have enough tokens for a transfer.
    - It verifies that attempting to transfer tokens when the sender doesn't have enough balance reverts with the expected error message.
 
-Overall, the test script covers key aspects of the contract's functionality, including deployment, token transfers, event emissions, and error handling. Make sure to run the tests using `npx hardhat test` and verify that they pass successfully.
+**To run the test, use `npx hardhat test`. **
