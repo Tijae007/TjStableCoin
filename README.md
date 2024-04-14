@@ -15,7 +15,7 @@ Balance - 0.01TJ
 
 Tests
 
-The test script checks the functionality of the `TjStableCoin` contract for:
+The test script checks the functionality of the `TjStableCoin` contract in the Mocha and Chai framework for:
 
 1. **Contract Deployment** (`beforeEach`):
    - Before each test case, the script deploys the `TjStableCoin` contract using `Token.deploy(owner.address)`, where `owner` is one of the signers obtained from `ethers.getSigners()`.
