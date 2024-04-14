@@ -15,6 +15,26 @@ Balance - 0.01TJ
 
 Tests
 
+1. **Setup Hardhat**:
+   - Ensure that you have Node.js and npm installed on your system.
+   - Install Hardhat globally by running `npm install -g hardhat` if you haven't already done so.
+   - Initialize a new Hardhat project in your project directory by running `npx hardhat init`.
+
+2. **Install Dependencies**:
+   - Install necessary dependencies for testing, including `@nomiclabs/hardhat-ethers`, `@nomiclabs/hardhat-waffle`, and `chai`. You can install them using npm:
+     ```
+     npm install @nomiclabs/hardhat-ethers @nomiclabs/hardhat-waffle chai
+     ```
+
+3. **Compile Contracts**:
+   - Compile your Solidity contracts by running `npx hardhat compile`. This command compiles your contracts and generates artifacts in the `artifacts` directory.
+
+4. **Run Tests**:
+   - Execute the tests using `npx hardhat test`. This command runs the tests written in the `Token.test.js` file and reports the results.
+
+
+
+
 The test script checks the functionality of the `TjStableCoin` contract in the Mocha and Chai framework for:
 
 1. **Contract Deployment** (`beforeEach`):
@@ -37,4 +57,3 @@ The test script checks the functionality of the `TjStableCoin` contract in the M
    - Tests the scenario where a sender doesn't have enough tokens for a transfer.
    - It verifies that attempting to transfer tokens when the sender doesn't have enough balance reverts with the expected error message.
 
-**To run the test, use `npx hardhat test`. **
